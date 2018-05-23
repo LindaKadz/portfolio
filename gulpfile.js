@@ -12,3 +12,8 @@ gulp.task('copyCSS', function () {
     .pipe(sass().on('error', sass.logError))
       .pipe(gulp.dest('portfolio'))
 })
+
+gulp.task('copyJavaScript', function () {
+  return gulp.src('*.js')
+  .pipe(gulp.dest('portfolio'))
+})
